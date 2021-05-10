@@ -9,6 +9,7 @@ import { UserService } from '../services/user.service';
 })
 export class InscrireComponent implements OnInit {
 user:User;
+rmdp:string;
   constructor(private userService:UserService) { }
 
   ngOnInit(): void {

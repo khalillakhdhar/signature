@@ -59,5 +59,9 @@ id:string;
 
   }
   update()
-  {}
+  {
+    let usr=Object.assign({},this.user);
+    this.userService.update_User(this.id,this.user);
+    alert("mis à jours avec succés");
+  }
 }

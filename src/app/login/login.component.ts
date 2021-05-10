@@ -49,8 +49,10 @@ correcte=false;
     {
       if((us.email==this.user.email)&&(us.mdp==this.user.mdp))
       {
+        localStorage.setItem("grade",us.grade);
+        localStorage.setItem("id",us.id);
         this.correcte=true;
-        window.location.replace("profile");
+        window.location.replace("/dashboard");
       }
 
 

@@ -10,6 +10,8 @@ export class SidebarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    if(localStorage.length==0)
+    window.location.replace("");
   }
 
 }
